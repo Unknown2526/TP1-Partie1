@@ -10,8 +10,23 @@ public class CV {
 	
 	public static void main(String[] args) {
 		
+
 	}
 
+	void affiche() {
+		System.out.println("nom: " + nom + " \nprenom: " + prenom + " \nformation: " + formation +
+				", \nnbAnnee: " + nbAnnee + " \ncompetence: " + toutCompetence(competence) + " \nattente: " 
+				+ attente + "]");
+	}
+	
+	public String toutCompetence(String[] competence){
+		
+		String toutCompetence = null;
+
+		toutCompetence = competence[0] + ", " + competence[1];
+		
+		return toutCompetence;
+	}
 
 }
 
